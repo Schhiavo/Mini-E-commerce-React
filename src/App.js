@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from './Nav'
+import Nav from './Nav' // importando função Nav de Nav.js
 import './App.css' //importando a folha de estilo
 
 const App = () => {

@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.App{
+  max-width:800px; /* largura maxima */
+
+  margin: 0 auto; /* margem 0 esq/dir e auto em cima/baixo */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-nav{
+  margin: 20px; /* Margem em todos os lados */ 
+
+  padding: 18px; /* Distanciando elementos */
+
+  border-bottom: 2px solid #508fca; /* borda de baixo sólida e azul */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-nav ul{
+  padding: 0px;
+  margin: 0px;
+}
+.App-nav button{
+  font-size: 18px; /* tamanho da fonte */
+
+  background: transparent; /* fundo transparente */
+
+  border: none; /* sem borda */
+
+  cursor: pointer; /* o cursor do mouse muda ao contato */
+}
+.App-nav-item{
+  list-style: none; /* retira as bolinhas da lista */
+
+  display: inline-block; /* coloca os itens á direita um do outro */
+
+  margin-right: 32px; /* define uma margem entre os itens */
+
+  font-size: 24px; 
+
+  border-bottom: 4px solid transparent; /* define uma borda transparente abaixo deles */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-content{
+  margin: 0px 20px;
 }
