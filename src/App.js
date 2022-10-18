@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Nav from './Nav' // importando função Nav de Nav.js
 import './App.css' //importando a folha de estilo
+import ItemPage from './ItemPage';
+import {items} from './static-data';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('items'); // faz a navegação começar na lista "items"
@@ -20,7 +22,7 @@ return (
 const Content = ({tab}) => {
   switch(tab){ //caso os valores de tab forem alternando, haverá as trocas determinadas nesse switch
     case 'items':
-      return <span>the items</span>;
+      return <ItemPage items={items}/>;
       case 'cart':
         return <span>the cart</span>;
         default:

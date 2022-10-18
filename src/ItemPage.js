@@ -21,6 +21,6 @@ function ItemPage({items}){
 
 ItemPage.propTypes = {
 items: PropTypes.array.isRequired
-} // função que garante que a função ItemPage receba apenas arrays
+} // função que garante que a função ItemPage receba apenas array
 
 export default ItemPage;
