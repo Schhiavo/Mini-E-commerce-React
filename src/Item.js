@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './Item.css';
 
 const Item = ({item, onAddToCart}) => {
-
+return (
    <div className="Item">
     <div className="Item-left">
      <div className="Item-image"></div>
@@ -25,7 +25,7 @@ const Item = ({item, onAddToCart}) => {
      </div>
     </div>
    </div>
-
+)
 } // função que recebe um item e um método como parâmetro, separa os objetos do item em divs e adiciona um botão que será acionado ao click e chamará o método onAddToCart 
 
 Item.propTypes = {
