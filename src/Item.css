@@ -1,0 +1,57 @@
+.Item{
+    display: flex; /* a classe Item vai adotar o método flex de exibição para colocar as divs á direita uma da outra */
+
+    justify-content: space-between; /* justificar com um espaço entre os blocos */
+
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.Item-image{
+    width: 64px;
+    height: 64px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    float: left;
+}
+
+.Item-title{
+    font-weight: bold; /* peso da fonte em negrito */
+
+    margin-bottom: 0.4em; /* em é uma proporção do padrão da fonte, mas pode usar px se quiser */
+}
+
+.Item-price{
+    text-align: right;
+    font-size: 18px;
+    color: #555;
+}
+
+.Item-addToCart{
+    margin-bottom: 5px;
+    font-size: 14px;
+    border: 2px solid #FFAA3F;
+    background-color: #fff;
+    
+    border-radius: 3px; /* arredonda a borda */
+
+    cursor: pointer;
+}
+
+.Item-addToCart:hover{
+    background-color: #FFDDB2;
+}
+
+.Item-addToCart:focus{
+    outline: none;
+}
+
+.Item-left{
+    flex: 1;
+}
+
+.Item-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

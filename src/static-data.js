@@ -8,7 +8,7 @@ let items = [
     {
         id: 1,
         name: "Celular k12",
-        description: "Em Promoção",
+        description: "Em Promoção apenas hoje!",
         price: 929.36
     },
     {
