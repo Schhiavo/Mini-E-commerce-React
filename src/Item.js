@@ -18,11 +18,7 @@ return (
      <div className="Item-price">
         ${item.price}
      </div>
-     <div>
-        <button className="Item-addToCart" onClick={onAddToCart}>
-            Add to cart
-        </button>
-     </div>
+     {children}
     </div>
    </div>
 )
@@ -30,7 +26,6 @@ return (
 
 Item.propTypes = {
     item: PropTypes.object.isRequired,
-    onAddToCart: PropTypes.func.isRequired
 }; //proptype para garantir que item é um objeto e onAddToCart é uma função
 
 export default Item;
